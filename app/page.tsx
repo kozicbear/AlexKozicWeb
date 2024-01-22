@@ -1,7 +1,11 @@
+import Projects from "@/components/Projects";
+import Welcome from "@/components/Welcome";
+
 export default function Home() {
   return (
-    <h1 className="font-bold text-teal-500 text-2xl">
-      Hello World
-    </h1>
+    <>
+      <Welcome />
+      <Projects />
+    </>
   )
 }

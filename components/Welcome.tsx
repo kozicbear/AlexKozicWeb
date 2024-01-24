@@ -4,8 +4,7 @@ import Image from 'next/image'
 const Welcome = () => {
   return (
     <section className="max-container padding-container flex flex-col
-    gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row border-2 
-    bg-stone-200 border-red-500">      
+    gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row bg-stone-50">      
       <div>
         {/* TODO: Ensure this new styling works well with different screen sizes */}
         {/* <div className="relative z-20 flex flex-1 flex-col xl:w-1/2"> */}

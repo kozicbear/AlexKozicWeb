@@ -2,6 +2,7 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { TbHome, TbMenu2 } from "react-icons/tb";
+import MyDropdown from "./Dropdown";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,8 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 key={link.key}
-                className="cursor-pointer flexCenter regular-16 text-gray-50 transition-all hover:text-orange-300"
+                className="cursor-pointer flexCenter regular-16
+                 text-gray-50 transition-all hover:text-orange-300"
               >
                 {link.label}
               </Link>
@@ -22,10 +24,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <TbMenu2
-          size={30}
-          className="inline-block cursor-pointer sm:hidden"
-        />
+        <MyDropdown/>
       </div>
     </nav>
   );

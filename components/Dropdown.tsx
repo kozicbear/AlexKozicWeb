@@ -1,13 +1,12 @@
-'use client';
+"use client";
 
 import { NAV_LINKS } from '@/constants';
-import { Menu } from '@headlessui/react';
 import { useState, useRef } from 'react';
 import { TbMenu2 } from 'react-icons/tb';
 
 export default function MyDropdown() {
-  const [visible, setVisible] = useState(true);
-  const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
+  const [visible, setVisible] = useState(false);
+  const timeoutRef = useRef<number | undefined>(undefined);
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
@@ -15,38 +14,34 @@ export default function MyDropdown() {
   };
 
   const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
+    timeoutRef.current = window.setTimeout(() => {
       setVisible(false);
-    }, 100);
+    }, 300); // Adjust the delay (in milliseconds) according to your preference
   };
 
   return (
-    <Menu as="div" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <Menu.Button>
-        <TbMenu2
-          size={30}
-          className="inline-block cursor-pointer sm:hidden"
-        />
-      </Menu.Button>
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="relative inline-block"
+    >
+      <TbMenu2
+        size={30}
+        className="inline-block cursor-pointer sm:hidden"
+      />
 
       {visible && (
-        <div>
-          <Menu.Items>
+        <div className="absolute mt-2 bg-white border rounded shadow-lg">
+          <ul>
             {NAV_LINKS.map((link) => (
-              <Menu.Item
-                as="a"
-                key={link.href}
-                href={link.href}
-                className="hover:text-orange-300"
-              >
-                {link.label}
-              </Menu.Item>
+              <li key={link.href} className="hover:text-orange-300">
+                <a href={link.href}>{link.label}</a>
+              </li>
             ))}
-          </Menu.Items>
+          </ul>
         </div>
       )}
-    </Menu>
+    </div>
   );
 }
-
 

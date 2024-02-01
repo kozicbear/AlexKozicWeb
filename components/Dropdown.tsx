@@ -16,7 +16,7 @@ export default function MyDropdown() {
   const handleMouseLeave = () => {
     timeoutRef.current = window.setTimeout(() => {
       setVisible(false);
-    }, 300); // Adjust the delay (in milliseconds) according to your preference
+    }, 300);
   };
 
   return (
@@ -27,14 +27,15 @@ export default function MyDropdown() {
     >
       <TbMenu2
         size={30}
-        className="inline-block cursor-pointer sm:hidden"
+        className="inline-block cursor-pointer sm:hidden text-gray-50"
       />
 
       {visible && (
-        <div className="absolute mt-2 bg-white border rounded shadow-lg">
+        <div className="fixed right-1 bg-stone-50 shadow-lg p-2">
           <ul>
             {NAV_LINKS.map((link) => (
-              <li key={link.href} className="hover:text-orange-300">
+              <li key={link.href} className="regular-16 text-gray-50 
+                hover:text-orange-300 text-center">
                 <a href={link.href}>{link.label}</a>
               </li>
             ))}

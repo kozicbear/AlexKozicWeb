@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="w-full fixed top-0 z-30 bg-stone-50 py-5 max-container padding-container">
       <div className="flex items-center justify-between">
         <div className="flex items-center flex-grow h-full">
-          <TbHome size={30} />
+          <TbHome size={30} className="text-gray-50" />
           <ul className="hidden h-full ml-auto gap-12 sm:flex items-center">
             {NAV_LINKS.map((link) => (
               <Link

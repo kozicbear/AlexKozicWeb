@@ -5,3 +5,9 @@ export const NAV_LINKS = [
   { href: '/', key: 'projects ', label: 'Projects' },
   { href: '/', key: 'resume', label: 'Resume' },
 ];
+
+export const PROJECTS = [
+  {id: 1, src: "/AlexWeb.jpeg", alt:"Alex Website"},
+  {id: 2, src: "/MUSESLAM.jpeg", alt:"MUSESLAM"},
+  {id: 3, src: "/NOTAMWeb.jpeg", alt:"NOTAM Web Viewer"},
+];

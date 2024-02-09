@@ -17,7 +17,7 @@ const Welcome = () => {
             and learning about the stock market.
           </p>
         </div>
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 items-center justify-center hidden sm:flex">
           <div className="rounded-lg overflow-hidden">
             <Image
               src="/MeWCat.png"

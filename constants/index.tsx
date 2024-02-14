@@ -7,7 +7,7 @@ export const NAV_LINKS = [
 ];
 
 export const PROJECTS = [
-  {id: 1, src: "/AlexWeb.jpeg", alt:"Alex Website"},
+  {id: 1, src: "/NOTAMWeb.jpeg", alt:"NOTAM Web Viewer"},
   {id: 2, src: "/MUSESLAM.jpeg", alt:"MUSESLAM"},
-  {id: 3, src: "/NOTAMWeb.jpeg", alt:"NOTAM Web Viewer"},
+  {id: 3, src: "/AlexWeb.jpeg", alt:"Alex Website"},
 ];

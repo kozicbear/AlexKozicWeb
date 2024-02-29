@@ -12,7 +12,7 @@ export const PROJECTS = [
     src:"/NOTAMWeb.jpeg", 
     alt:"NOTAM Web Viewer", 
     name:"NOTAM Web Viewer", 
-    year:"2023",
+    type:"SWE Intern, Foreflight | 2023",
     skills:"React, Typescript, Web Development",
     description:`Upgraded ForeFlight's internal tooling from a dated
       desktop application to a modern web application using TypeScript 
@@ -24,7 +24,7 @@ export const PROJECTS = [
     src: "/MUSESLAM.jpeg", 
     alt:"MUSESLAM",
     name:"MUSESLAM", 
-    year:"2023",
+    type:"SWE Intern, Foreflight | 2023",
     skills:"React, Typescript, Web Development",
     description:`Upgraded ForeFlight's internal tooling from a dated
       desktop application to a modern web application using TypeScript 
@@ -36,7 +36,7 @@ export const PROJECTS = [
     src: "/AlexWeb.jpeg", 
     alt:"Alex Website",
     name:"Alex's Website",
-    year:"2023",
+    type:"SWE Intern, Foreflight | 2023",
     skills:"React, Typescript, Web Development",
     description:`Upgraded ForeFlight's internal tooling from a dated
       desktop application to a modern web application using TypeScript 

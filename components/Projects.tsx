@@ -2,13 +2,14 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { PROJECTS } from "@/constants";
+import SkillBox from "./SkillBox";
 
 const Projects = () => {
   return (
     <section className='2xl:max-container relative flex flex-col padding-container 
-    lg:mb-10 lg:py-20 xl:mb-20 bg-stone-100 px-36'>
+    py-20 bg-stone-100 px-36'>
 
-      <div className="pl-12 pb-1 bold-32 lg:bold-50 text-gray-600">
+      <div className="pl-12 pb-5 bold-32 lg:bold-50 text-gray-600">
         Projects
       </div>
 
@@ -20,14 +21,14 @@ const Projects = () => {
                 <img 
                   alt={Project.alt} 
                   src={Project.src} 
-                  className="max-w-full h-auto rounded-lg" // Ensure the image fits within the container
+                  className="max-w-full h-auto rounded-lg"
                 />
               </div>
               
-              <div className="w-1/2 flex-grow p-2 ml-2 text-left">
-                <div className="bold-40 text-gray-600">{Project.name}</div>
-                <div className="pt-2">{Project.type}</div>
-                <div>{Project.skills}</div>
+              <div className="w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
+                <div className="bold-40 text-gray-600 pb-2">{Project.name}</div>
+                <div className="pb-2">{Project.type}</div>
+                <SkillBox skills={Project.skills}></SkillBox>
                 <div>{Project.description}</div>
               </div>
             </div>

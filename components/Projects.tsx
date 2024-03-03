@@ -13,7 +13,8 @@ const Projects = () => {
         Projects
       </div>
 
-      <Carousel showIndicators={false} showThumbs={false} infiniteLoop className="px-16">
+      <Carousel autoPlay={true} showIndicators={false} showThumbs={false} infiniteLoop={true} 
+      interval={7000} transitionTime={1000} className="px-16">
         {PROJECTS.map(Project => (
           <div className="slide rounded-lg shadow-sm bg-white p-6 m-1" key={Project.id}>
             <div className="flex flex-row">

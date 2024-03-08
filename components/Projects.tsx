@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -29,53 +29,53 @@ const Projects = () => {
         Projects
       </div>
 
-      <div className="flex flex-row items-center justify-center relative mx-[-50px]">
-        <button onClick={handlePrevClick} style={{ fontSize: 20, padding: '5px 20px', margin: '5px 0px' }}>
+      <div className="flex flex-row items-center justify-center relative mx-[-50px] p-6">
+        <button onClick={handlePrevClick} className="p-4">
           <TbChevronLeft size={30} className="font-bold"/>
         </button>
         
-        <Carousel
-          autoPlay={true}
-          showIndicators={false}
-          showArrows={false}
-          showThumbs={false}
-          infiniteLoop={true}
-          interval={7000}
-          transitionTime={1000}
-          selectedItem={currentSlide}
-          onChange={handleSlideChange}
-        >
-          {PROJECTS.map(Project => (
-            <div className="slide rounded-lg shadow-sm bg-white p-6 m-1" key={Project.id}>
-              <div className="flex flex-row">
-                <div className="flex-shrink-0 w-1/2 mr-2">
-                  <img 
-                    alt={Project.alt} 
-                    src={Project.src} 
-                    className="max-w-full h-auto rounded-lg"
-                  />
-                </div>
-                
-                <div className="w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
-                  <div className="bold-40 text-gray-600 pb-2">{Project.name}</div>
-                  <div className="pb-2">{Project.type}</div>
-                  <SkillBox skills={Project.skills}></SkillBox>
-                  <div>{Project.description}</div>
+        <div className="carousel w-full min-w-4 flex md:flex-col">
+          <Carousel
+            autoPlay={true}
+            showIndicators={false}
+            showArrows={false}
+            showThumbs={false}
+            infiniteLoop={true}
+            interval={7000}
+            transitionTime={1000}
+            selectedItem={currentSlide}
+            onChange={handleSlideChange}
+            className="w-full"
+          >
+            {PROJECTS.map(Project => (
+              <div className="slide rounded-lg shadow-sm bg-white p-6 m-1" key={Project.id}>
+                <div className="flex md:flex-row flex-col">
+                  <div className="flex-shrink-0 md:w-1/2 mr-2">
+                    <img 
+                      alt={Project.alt} 
+                      src={Project.src} 
+                      className="max-w-full h-auto rounded-lg"
+                    />
+                  </div>
+                  
+                  <div className="md:w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
+                    <div className="bold-40 text-gray-600 pb-2">{Project.name}</div>
+                    <div className="pb-2">{Project.type}</div>
+                    <SkillBox skills={Project.skills}></SkillBox>
+                    <div>{Project.description}</div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </Carousel>
-        
-        <div className="">
-          <button onClick={handleNextClick} style={{ fontSize: 20, padding: '5px 20px', margin: '5px 0px' }}>
-            <TbChevronRight size={30} className="font-bold"/>
-          </button>
+            ))}
+          </Carousel>
         </div>
+        
+        <button onClick={handleNextClick} className="p-4">
+          <TbChevronRight size={30} className="font-bold"/>
+        </button>
       </div>
     </section>
   )
 }
 
 export default Projects;
-

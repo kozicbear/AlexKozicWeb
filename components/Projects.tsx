@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <section className='2xl:max-container relative flex flex-col padding-container 
-    py-20 bg-stone-100 px-36 text-gray-600'>
+    py-16 bg-stone-100 px-36 text-gray-600'>
       <div className="pl-12 pb-5 bold-32 lg:bold-5">
         Projects
       </div>

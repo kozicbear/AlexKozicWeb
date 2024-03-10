@@ -7,7 +7,7 @@ import SkillBox from "./SkillBox";
 const Projects = () => {
   return (
     <section className='2xl:max-container relative flex flex-col padding-container 
-    py-20 bg-stone-50 px-36'>
+    py-20 bg-stone-50 px-36 text-gray-600'>
       <div className="pl-12 pb-5 bold-32 lg:bold-50 text-gray-600">
         Experience
       </div>

@@ -9,7 +9,7 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     id: 1, 
-    src:"/NOTAMWeb.jpeg", 
+    src:"/NOTAMWeb.png", 
     alt:"NOTAM Web Viewer", 
     name:"NOTAM Web Viewer", 
     type:"SWE Intern, Foreflight | 2023",
@@ -21,7 +21,7 @@ export const PROJECTS = [
   },
   {
     id: 2, 
-    src: "/MUSESLAM.jpeg", 
+    src: "/MUSESLAM.png", 
     alt:"MUSESLAM",
     name:"MUSESLAM", 
     type:"Class Project | 2023",
@@ -32,7 +32,7 @@ export const PROJECTS = [
   },
   {
     id: 3, 
-    src: "/AlexWeb.jpeg", 
+    src: "/AlexWeb.png", 
     alt:"Alex Website",
     name:"Alex's Website",
     type:"Personal Project | 2024",

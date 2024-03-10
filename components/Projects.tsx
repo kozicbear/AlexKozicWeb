@@ -34,7 +34,7 @@ const Projects = () => {
           <TbChevronLeft size={30} className="font-bold"/>
         </button>
         
-        <div className="carousel w-full min-w-4 flex md:flex-col">
+        <div className="carousel w-full min-w-4 flex md:flex-col rounded-lg shadow-lg">
           <Carousel
             autoPlay={true}
             showIndicators={false}
@@ -48,13 +48,13 @@ const Projects = () => {
             className="w-full"
           >
             {PROJECTS.map(Project => (
-              <div className="slide rounded-lg shadow-sm bg-white p-6 m-1" key={Project.id}>
+              <div className="slide rounded-lg bg-white p-6 m-1" key={Project.id}>
                 <div className="flex md:flex-row flex-col">
                   <div className="flex-shrink-0 md:w-1/2 mr-2">
                     <img 
                       alt={Project.alt} 
                       src={Project.src} 
-                      className="max-w-full h-auto rounded-lg"
+                      className="w-full h-auto rounded-lg" 
                     />
                   </div>
                   

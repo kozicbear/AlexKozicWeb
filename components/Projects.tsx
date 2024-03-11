@@ -29,7 +29,7 @@ const Projects = () => {
         Projects
       </div>
 
-      <div className="flex flex-row items-center justify-center relative mx-[-50px] p-6">
+      <div className="flexCenter flex-row relative mx-[-50px] p-6">
         <button onClick={handlePrevClick} className="p-4">
           <TbChevronLeft size={30} className="font-bold"/>
         </button>
@@ -52,17 +52,16 @@ const Projects = () => {
                 <div className="flex md:flex-row flex-col">
                   <div className="flex-shrink-0 md:w-1/2 mr-2">
                     <img 
-                      alt={Project.alt} 
                       src={Project.src} 
                       className="w-full h-auto rounded-lg" 
                     />
                   </div>
                   
-                  <div className="md:w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
+                  <div className="regular-18 md:w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
                     <div className="bold-40 text-gray-600 pb-2">{Project.name}</div>
                     <div className="pb-2">{Project.type}</div>
                     <SkillBox skills={Project.skills}></SkillBox>
-                    <div>{Project.description}</div>
+                    <div className="">{Project.description}</div>
                   </div>
                 </div>
               </div>

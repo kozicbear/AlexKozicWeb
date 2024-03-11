@@ -15,7 +15,7 @@ const Welcome = () => {
             and learning about the stock market.
           </p>
         </div>
-        <div className="flex items-center justify-center flex-shrink-0 md:w-2/5">
+        <div className="flexCenter flex-shrink-0 md:w-2/5">
           <img 
             src="/MeWCat.png"
             alt="catAndI" 

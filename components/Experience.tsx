@@ -1,8 +1,7 @@
-
 import { EXPERIENCES } from "@/constants";
 import { URL } from "next/dist/compiled/@edge-runtime/primitives/url";
 
-const Projects = () => {
+const Experience = () => {
   return (
     <section className='2xl:max-container relative flex flex-col padding-container 
     py-16 bg-stone-50 px-38 text-gray-600 regular-18'>
@@ -36,4 +35,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Experience;

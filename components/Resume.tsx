@@ -22,7 +22,7 @@ const Resume = () => {
   };
 
   return (
-    <button className="text-red-500" onClick={onButtonClick}>
+    <button className="bg-stone-200 rounded-lg px-1.5 py-1" onClick={onButtonClick}>
       Resume
     </button>
   )

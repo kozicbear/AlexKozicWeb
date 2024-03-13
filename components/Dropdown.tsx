@@ -27,15 +27,14 @@ export default function MyDropdown() {
     >
       <TbMenu2
         size={30}
-        className="inline-block cursor-pointer sm:hidden text-gray-50"
+        className="flex cursor-pointer sm:hidden text-gray-50 mr-3"
       />
 
       {visible && (
-        <div className="fixed right-1 bg-stone-50 shadow-lg p-2">
+        <div className="fixed right-1 bg-stone-200 rounded-lg shadow-lg mt-1 p-2">
           <ul>
             {NAV_LINKS.map((link) => (
-              <li key={link.href} className="regular-16 text-gray-50 
-                hover:text-orange-300 text-center">
+              <li key={link.href} className="hover:text-orange-300 text-center">
                 <a href={link.href}>{link.label}</a>
               </li>
             ))}

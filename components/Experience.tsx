@@ -3,7 +3,7 @@ import { URL } from "next/dist/compiled/@edge-runtime/primitives/url";
 
 const Experience = () => {
   return (
-    <section className='2xl:max-container relative flex flex-col padding-container 
+    <section id="experience" className='2xl:max-container relative flex flex-col padding-container 
     py-16 bg-stone-50 px-38 text-gray-600 regular-18'>
       <div className="pl-12 pb-5 bold-32 lg:bold-50 text-gray-600">
         Experience

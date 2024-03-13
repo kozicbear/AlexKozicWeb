@@ -2,8 +2,8 @@ import React from 'react';
 
 const Welcome = () => {
   return (
-    <section className="2xl:max-container relative padding-container 
-    pt-28 pb-20 bg-stone-50 px-36 text-gray-600">
+    <section id="about_me" className="2xl:max-container relative padding-container 
+    md:pt-28 pt-12 pb-20 bg-stone-50 px-36 text-gray-600">
       <div className="flex flex-col md:flex-row items-center text-gray-600">
         <div className="text-left p-8 md:w-3/5">
           <h1 className="bold-52">Alexander Kozic</h1>

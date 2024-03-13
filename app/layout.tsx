@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import './globals.css'
 import Navbar from '@/components/Navbar';
 
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       <body>
         <Navbar />
         <main className='relative overflow-hidden'>

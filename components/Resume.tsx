@@ -22,7 +22,7 @@ const Resume = () => {
   };
 
   return (
-    <button className="bg-stone-200 rounded-lg px-1.5 py-1" onClick={onButtonClick}>
+    <button className="border-2 border-stone-200 bg-stone-200 hover:bg-stone-50 rounded-lg px-1.5 py-1" onClick={onButtonClick}>
       Resume
     </button>
   )

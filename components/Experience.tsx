@@ -31,6 +31,7 @@ const Experience = () => {
           </div>
         </div>
       ))}
+      <div id="contact"></div>
     </section>
   )
 }

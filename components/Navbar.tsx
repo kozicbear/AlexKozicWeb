@@ -15,7 +15,7 @@ const Navbar = () => {
           <a href="" onClick={reloadPage}>
             <TbHome size={30} />
           </a>
-          <ul className="hidden h-full ml-auto gap-12 sm:flex items-center mr-12">
+          <ul className="hidden h-full ml-auto gap-6 md:gap-12 sm:flex items-center mr-12">
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}

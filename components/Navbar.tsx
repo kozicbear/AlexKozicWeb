@@ -9,7 +9,7 @@ const Navbar = () => {
     window.location.href = window.location.href;
   };
   return (
-    <nav className="w-full fixed top-0 z-30 bg-stone-50 py-5 max-container padding-container text-gray-600 regular-12">
+    <nav className="w-full fixed top-0 z-30 bg-stone-50 py-5 max-container padding-container text-gray-600 regular-20">
       <div className="flex items-center justify-between">
         <div className="flex items-center flex-grow h-full">
           <a href="" onClick={reloadPage}>
@@ -20,7 +20,7 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 key={link.key}
-                className="cursor-pointer flexCenter regular-16 transition-all hover:text-orange-300"
+                className="cursor-pointer flexCenter transition-all hover:text-orange-300"
               >
                 {link.label}
               </Link>

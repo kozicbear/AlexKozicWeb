@@ -23,9 +23,9 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className='2xl:max-container relative flex flex-col padding-container 
+    <section className='2xl:max-container relative flex flex-col padding-container 
     py-16 bg-stone-100 px-36 text-gray-600'>
-      <div className="pl-12 pb-5 bold-32 lg:bold-5">
+      <div className="pl-12 bold-52 lg:bold-5">
         Projects
       </div>
 
@@ -57,8 +57,8 @@ const Projects = () => {
                     />
                   </div>
                   
-                  <div className="regular-18 md:w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
-                    <div className="bold-40 text-gray-600 pb-2">{Project.name}</div>
+                  <div className="regular-20 md:w-1/2 flex-grow p-2 ml-2 text-left text-gray-500">
+                    <div className="bold-40 text-gray-600">{Project.name}</div>
                     <div className="pb-2">{Project.type}</div>
                     <SkillBox skills={Project.skills}></SkillBox>
                     <div className="">{Project.description}</div>
@@ -73,6 +73,7 @@ const Projects = () => {
           <TbChevronRight size={30} className="font-bold"/>
         </button>
       </div>
+      <div id="experience"></div>
     </section>
   )
 }

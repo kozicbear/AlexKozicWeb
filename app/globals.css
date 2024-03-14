@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Inter;
+  font-family:  Optima, sans-serif;
 }
 
 @layer utilities {  
@@ -36,6 +36,10 @@ body {
 
   .regular-24 {
     @apply text-[24px] font-[400];
+  }
+
+  .regular-22 {
+    @apply text-[22px] font-[400];
   }
 
   .regular-20 {
@@ -71,11 +75,19 @@ body {
   }
 
   .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
+    @apply text-[46px] font-[700] leading-[120%];
   }
 
   .bold-32 {
     @apply text-[32px] font-[700] leading-[120%];
+  }
+
+  .bold-28 {
+    @apply text-[28px] font-[700];
+  }
+
+  .bold-24 {
+    @apply text-[24px] font-[700];
   }
 
   .bold-20 {

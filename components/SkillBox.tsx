@@ -4,7 +4,7 @@ const SkillBox = ({ skills }: any) => {
   return (
     <ul className="flex flex-wrap">
       {skillList.map((skill: string, index: number) => (
-        <li className="text-gray-600 font-bold bg-stone-100 rounded-md pt-1 pb-1 pl-2 pr-2 mr-2 mb-2" key={index}>{skill}</li>
+        <li className="text-gray-600 bold-18 bg-stone-100 rounded-md pt-1 pb-1 pl-2 pr-2 mr-2 mb-2" key={index}>{skill}</li>
       ))}
     </ul>
   )

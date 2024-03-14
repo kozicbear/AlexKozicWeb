@@ -34,7 +34,7 @@ const Projects = () => {
           <TbChevronLeft size={30} className="font-bold"/>
         </button>
         
-        <div className="carousel w-full min-w-4 flex md:flex-col rounded-lg shadow-lg">
+        <div className="carousel w-full min-w-4 flex md:flex-col rounded-lg shadow-lg bg-white">
           <Carousel
             autoPlay={true}
             showIndicators={false}

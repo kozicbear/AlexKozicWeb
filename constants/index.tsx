@@ -33,7 +33,7 @@ export const PROJECTS = [
     src: "/AlexWeb.png", 
     name:"Alex's Website",
     type:"Personal Project | 2024",
-    skills:"React, Typescript, Next.js, Tailwind CSS",
+    skills:"React, Typescript, Next.js, Tailwind CSS, AWS",
     description:`Website providing insight into my professional,
     academic, and recreational pursuits`
   },

@@ -9,7 +9,7 @@ const Navbar = () => {
     window.location.href = window.location.href;
   };
   return (
-    <nav className="w-full fixed top-0 z-30 bg-stone-50 py-5 max-container padding-container text-gray-600 regular-20">
+    <nav className="w-full fixed top-0 z-30 bg-stone-50 py-5 px-10 text-gray-600 regular-20">
       <div className="flex items-center justify-between">
         <div className="flex items-center flex-grow h-full">
           <a href="" onClick={reloadPage}>

@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section className='2xl:max-container relative flexCenter flex-col padding-container 
+    <section className='relative flexCenter flex-col padding-container 
     py-16 bg-stone-100 px-38 text-gray-600 regular-20'>
       <div className="pb-2 bold-52 text-gray-600">
         Contact

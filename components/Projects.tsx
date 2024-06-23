@@ -23,7 +23,7 @@ const Projects = () => {
   };
 
   return (
-    <section className='2xl:max-container relative flex flex-col padding-container 
+    <section className='relative flex flex-col padding-container 
     py-16 bg-stone-100 px-36 text-gray-600'>
       <div className="pl-12 bold-52 lg:bold-5">
         Projects

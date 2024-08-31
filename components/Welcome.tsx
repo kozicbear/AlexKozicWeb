@@ -11,15 +11,15 @@ const Welcome = () => {
             Welcome to my personal website! 
             My name is Alex, and I am a software engineer intern at Foreflight. I graduated 
             Cum Laude from Bowdoin College in May with a Bachelor of arts in Computer Science and Russian. 
-            My interests are hockey, snowboarding, guitar, and singing. Not to mention I am 
+            My interests are hockey, snowboarding, guitar, and singing; not to mention I am 
             always up for a game of chess. Recently, I have spent my time calculating runway 
             intersection take off distances for the Foreflight application.
           </p>
         </div>
         <div className="flexCenter flex-shrink-0 md:w-2/5">
           <img 
-            src="/MeWCat.png"
-            alt="catAndI" 
+            src="/GradPhoto.png"
+            alt="GraduationPicture" 
             className="w-4/5 rounded-lg"
           />
         </div>

@@ -61,7 +61,7 @@ export const PROJECTS = [
 export const EXPERIENCES = [
   {
     id: 1, 
-    dates:"May 2024 - Aug 2024",
+    dates:"May 2024 - Present",
     company:"Foreflight",
     role:"Data Integration Intern",
     description: [
@@ -73,7 +73,7 @@ export const EXPERIENCES = [
   },
   {
     id: 2, 
-    dates:"Aug 2021 - May - 2024",
+    dates:"Aug 2021 - May 2024",
     company:"Bowdoin College",
     role:"Proctor",
     description: [

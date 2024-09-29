@@ -9,7 +9,7 @@ const Welcome = () => {
           <h1 className="bold-52 mb-2">About Me</h1>
           <p className="regular-24">
             Welcome to my personal website! 
-            My name is Alex, and I am a software engineer intern at Foreflight. I graduated 
+            My name is Alex, and I am a software engineer at Foreflight. I graduated 
             Cum Laude from Bowdoin College in May with a Bachelor of arts in Computer Science and Russian. 
             My interests are hockey, snowboarding, guitar, and singing; not to mention I am 
             always up for a game of chess. Recently, I have spent my time calculating runway 
